@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Subscribe</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(0, 255, 251);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      h2 {
+        color: #030f3b;
+      }
+
+      form {
+        background: rgb(255, 29, 29);
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+      }
+
+      input[type="email"] {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid white;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+
+      button {
+        background-color: rgb(36, 255, 65);
+        color: black;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 15px;
+      }
+
+      button:hover {
+        background-color: #fff700;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Subscribe to DEV@Deakin</h2>
+    <form action="/subscribe" method="POST">
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+      <button type="submit">Subscribe</button>
+    </form>
+  </body>
+</html>
